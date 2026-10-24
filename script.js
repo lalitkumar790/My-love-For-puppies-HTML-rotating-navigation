@@ -139,7 +139,10 @@
     fetchButton.disabled = true;
     fetchBall.disabled = true;
     fetchYard.classList.remove("is-running", "is-returning", "is-celebrating");
-    fetchYard.style.setProperty("--run-distance", Math.max(80, fetchYard.clientWidth * 0.38) + "px");
+    const puppyRect = fetchPuppy.getBoundingClientRect();
+    const ballRect = fetchBall.getBoundingClientRect();
+    const travel = Math.max(0, ballRect.left + ballRect.width / 2 - (puppyRect.left + puppyRect.width / 2));
+    fetchYard.style.setProperty("--run-distance", travel + "px");
     gameStatus.textContent = state.name + " is on the case!";
     say(randomMessage("fetch"), 3500);
     fetchYard.classList.add("is-running");

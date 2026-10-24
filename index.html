@@ -1,73 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Rotating Navigation</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="circle-container">
-        <div class="circle">
-          <button id="close">
-            <i class="fas fa-times"></i>
-          </button>
-          <button id="open">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="content">
-        <h1>Amazing Article</h1>
-        <small>Lalit Sikarwar</small>
-        <p>We all love puppies, right? It’s near impossible for any dog lover not to, surely. Wriggly, fluffy, loving and extremely cute – why wouldn’t you love them? Here at in this world, we adore the little rascals – and they’re not just adorable; they’re interesting, too. Read on to find out some of our favourite facts about puppies. </p>
-        <p><strong>1. Born helpless</strong>
-            You might expect puppies to be helpless when they’re born. (They’re babies, after all!) But did you know that they’re effectively born deaf and blind, with no teeth? It’s one of our favourite puppy facts! Even the famous canine sense of smell isn’t active when a puppy is born, and their eyes and ears are closed. Their eyes open when they are between 10 and 14 days old, with eyesight fully developing at about 7 weeks.
-            <br>
-            <strong>2. The first sense to develop is touch</strong>
-            Born without most of their senses fully developed, the first sense that puppies develop is touch. Almost from the very moment they are born, a puppy’s mother will lick and nuzzle them, stimulating their sense of touch. Touch continues to be important for your puppy throughout their lives.
-            <br>
-            <strong>3. Puppies can be twins</strong>
-            There are often many puppies in a litter, each genetically unique – but did you know that puppies can be twins? The first confirmed case of this was recorded in South Africa in 2016, with vet Kurt de Cramer delivering them via Caesarean section. Although it’s possible that there have been other unconfirmed cases of genetically identical canine twins, this was the first officially recorded instance of identical puppies being born.
-            <br>
-            <strong>4. They have baby teeth</strong>
-            Another interesting puppy fact is that they lose their first set of teeth – meaning that these could (adorably) be called baby teeth. Your puppy’s baby teeth will be replaced with adult teeth at about 4 months of age.</p>
-
-        <h3>My Dog</h3>
-        <img src="photo-1507146426996-ef05306b995a.avif" alt="doggy" />
-            <p><strong>5. Their coat colour may change as they grow</strong>
-            A bit like humans, the colour of puppies’ coats may change as they get older. Patches of colour can shift and grow, and how they do so can depend on breed. Dalmatians, for instance, don’t develop their famous spots until they are two or three weeks old. If your pup is purebred, then you’ll be able to more or less predict their appearance through how their parents look, but for crossbred or mixed breed pups, it can prove more complicated.
-            <br>
-            <strong>6. Estimated 1.2 million born worldwide</strong>
-            Another interesting fact about puppies is that the number of pups born each day drastically overtakes the number of human babies that come into the world, with approximately 1.2 million pups to 360,000 babies. That’s roughly 3 times as many puppies as humans!
-            <br>
-            <strong>7. Ideally, all should double their birth weight after the first week</strong>
-            If all goes to plan, and your pup is growing healthy and strong, they should ideally double their birth weight after the first week of life. Twice the size in just a week!
-            <br>
-            <strong>8. At a year old, they’re considered adults</strong>
-            Puppies are officially considered adult dogs when they reach a year old, although the age at which they reach maturity really varies by breed. Small dogs like Chihuahuas, for instance, will be physically mature at about 9 or 10 months old, while large breeds like the Great Dane can take up to 2 years to be fully grown!
-            <br>
-            <strong>9. Largest litter ever recorded was 24 puppies</strong>
-            One of the most almost unbelievable facts about puppies, this amazing fact is recorded in the Guinness Book of World Records! Born in the UK in 2004 to a Neapolitan mastiff called Tia, the 24 pups were born by Caesarean section, although one was unfortunately still born, and three others died in the first week.
-            <br>
-            <strong>10. Puppies can be born green</strong>
-            It seems incredible, but it’s true… Puppies can be born green. Although the colour isn’t permanent – fading after a few weeks - there are a few recorded cases of light-coloured puppies being born a surprisingly verdant colour. Veterinarians think that the unusual colour is caused by a green bile pigment found in the dog’s placenta mixing with the amniotic fluid
-        </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ee">
+  <meta name="description" content="Meet Biscuit, an animated puppy. Give treats, share a little love, and play fetch in this tiny interactive dog world.">
+  <title>Biscuit's Little World — Puppy Playground</title>
+  <link rel="preload" href="S6uyw4BMUTPHjxAwXjeu.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="page">
+    <div class="circle-container" aria-label="Site navigation controls">
+      <div class="circle">
+        <button id="close" type="button" aria-label="Close navigation" aria-controls="site-navigation">
+          <span aria-hidden="true">×</span>
+        </button>
+        <button id="open" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+          <span aria-hidden="true">☰</span>
+        </button>
       </div>
     </div>
 
-    <nav>
-      <ul>
-        <li><i class="fas fa-home"></i><a href="#"> Home</a></li>
-        <li><i class="fas fa-user-alt"></i><a href="#"> About</a></li>
-        <li><i class="fas fa-envelope"></i><a href="#"> Contact</a></li>
-      </ul>
-    </nav>
-    <script src="script.js"></script>
-  </body>
+    <main class="content">
+      <section class="hero section-anchor" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE PAW-SITIVITY, JUST FOR YOU</p>
+          <h1 id="hero-title">Meet your new <span>best friend.</span></h1>
+          <p class="intro">Some days need a big adventure. Some days just need a tiny puppy and a little kindness.</p>
+          <div class="name-chip"><span class="online-dot"></span> Currently hanging out with <strong id="puppy-name-label">Biscuit</strong></div>
+          <div class="hero-actions">
+            <button class="button button-primary" id="pet-button" type="button"><span aria-hidden="true">♡</span> Give a cuddle</button>
+            <button class="button button-secondary" id="treat-button" type="button"><span aria-hidden="true">✦</span> Give a treat</button>
+          </div>
+          <p class="tiny-note">Psst… try clicking Biscuit, too.</p>
+        </div>
+
+        <div class="puppy-scene" id="puppy-stage">
+          <div class="scene-sun" aria-hidden="true"></div>
+          <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+          <span class="sparkle sparkle-three" aria-hidden="true">·</span>
+          <div class="speech-bubble" id="puppy-message" aria-live="polite">Hey! Got a treat for me?</div>
+          <button class="puppy-character" id="puppy-character" type="button" aria-label="Say hello to Biscuit">
+            <img src="assets/puppy.svg" alt="" draggable="false">
+          </button>
+          <div class="ground-shadow" aria-hidden="true"></div>
+          <div class="scene-grass" aria-hidden="true"></div>
+          <div class="scene-caption"><span class="caption-heart">♥</span> certified good pup</div>
+        </div>
+      </section>
+
+      <section class="mini-stats" aria-label="Biscuit's play stats">
+        <div class="stat"><span class="stat-icon">♡</span><div><strong id="happiness-value">100%</strong><span>happiness</span></div></div>
+        <div class="stat"><span class="stat-icon">✦</span><div><strong id="treat-count">0</strong><span>treats shared</span></div></div>
+        <div class="stat"><span class="stat-icon">↗</span><div><strong id="fetch-count">0</strong><span>fetch victories</span></div></div>
+      </section>
+
+      <section class="about-section section-anchor" id="meet-puppy">
+        <div class="section-heading">
+          <p class="eyebrow">A VERY IMPORTANT INTRODUCTION</p>
+          <h2>Small paws. <span>Huge personality.</span></h2>
+          <p>Biscuit is a professional napper, part-time explorer, and full-time fan of you.</p>
+        </div>
+        <div class="about-grid">
+          <figure class="photo-card">
+            <img src="photo-1507146426996-ef05306b995a.avif" alt="A sweet dog looking up with a curious expression" loading="lazy">
+            <figcaption><span>Today's mood</span><strong>Curious & cuddly</strong></figcaption>
+          </figure>
+          <div class="personality-list">
+            <article class="personality-card"><span class="personality-icon peach">☀</span><div><h3>Sunbeam enthusiast</h3><p>Will cross an entire room for the warm patch of sunlight.</p></div></article>
+            <article class="personality-card"><span class="personality-icon green">♡</span><div><h3>Professional best friend</h3><p>Thinks your presence is the best part of every day.</p></div></article>
+            <article class="personality-card"><span class="personality-icon lilac">✦</span><div><h3>Curiosity on four paws</h3><p>Every squeaky toy is a mystery waiting to be solved.</p></div></article>
+            <label class="rename-control" for="puppy-name">Give Biscuit a nickname
+              <span class="rename-row"><input id="puppy-name" maxlength="18" placeholder="e.g. Mochi" autocomplete="off"><button class="button button-small" id="rename-button" type="button">That's the one</button></span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="play-section section-anchor" id="play">
+        <div class="play-copy">
+          <p class="eyebrow">THE BACKYARD IS OPEN</p>
+          <h2>Ready, set, <span>fetch!</span></h2>
+          <p>Throw the ball and let Biscuit do what Biscuit does best. One throw, one very happy dog.</p>
+          <button class="button button-primary" id="fetch-button" type="button"><span aria-hidden="true">↗</span> Throw the ball</button>
+          <p class="game-status" id="game-status" role="status">Biscuit is waiting for the big throw.</p>
+        </div>
+        <div class="fetch-yard" id="fetch-yard" aria-label="Fetch game area">
+          <div class="yard-cloud cloud-one" aria-hidden="true"></div><div class="yard-cloud cloud-two" aria-hidden="true"></div>
+          <div class="yard-sun" aria-hidden="true"></div>
+          <div class="fetch-puppy" id="fetch-puppy"><img src="assets/puppy.svg" alt=""></div>
+          <button class="fetch-ball" id="fetch-ball" type="button" aria-label="Throw the ball" title="Throw the ball"><span></span></button>
+          <div class="yard-ground" aria-hidden="true"></div>
+          <span class="yard-flower flower-one" aria-hidden="true">✿</span><span class="yard-flower flower-two" aria-hidden="true">✿</span>
+        </div>
+      </section>
+
+      <section class="facts-section section-anchor" id="puppy-facts">
+        <div class="section-heading">
+          <p class="eyebrow">DID YOU KNOW?</p>
+          <h2>Little facts, <span>big woof.</span></h2>
+          <p>Three reasons dogs make the world feel a little softer.</p>
+        </div>
+        <div class="facts-grid">
+          <article class="fact-card"><span class="fact-number">01</span><span class="fact-emoji">👃</span><h3>A super-powered nose</h3><p>Dogs rely heavily on scent to explore and understand the world around them.</p></article>
+          <article class="fact-card"><span class="fact-number">02</span><span class="fact-emoji">🐾</span><h3>Those tiny toe beans</h3><p>Paw pads help provide traction and cushioning as dogs move around.</p></article>
+          <article class="fact-card"><span class="fact-number">03</span><span class="fact-emoji">💛</span><h3>Made for connection</h3><p>Positive, reward-based training helps dogs learn while building trust with people.</p></article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <a class="footer-brand" href="#home"><span class="brand-paw">🐾</span> Biscuit's Little World</a>
+        <p>Made with a little code and a whole lot of puppy love.</p>
+        <a href="#home" class="back-to-top">Back to top ↑</a>
+      </footer>
+    </main>
+  </div>
+
+  <nav class="side-nav" id="site-navigation" aria-label="Main navigation" inert>
+    <ul>
+      <li><span aria-hidden="true">⌂</span><a href="#home">Home</a></li>
+      <li><span aria-hidden="true">♡</span><a href="#meet-puppy">Meet Biscuit</a></li>
+      <li><span aria-hidden="true">↗</span><a href="#play">Play fetch</a></li>
+      <li><span aria-hidden="true">✦</span><a href="#puppy-facts">Puppy facts</a></li>
+    </ul>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
 </html>
-
-

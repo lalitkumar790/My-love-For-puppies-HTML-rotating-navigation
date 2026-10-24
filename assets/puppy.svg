@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 390" role="img" aria-labelledby="title desc">
+<title id="title">Biscuit the puppy</title><desc id="desc">A friendly golden puppy with floppy ears, a cream muzzle, a teal collar and a wagging tail.</desc>
+<defs>
+ <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4c77f"/><stop offset="1" stop-color="#d9944d"/></linearGradient>
+ <linearGradient id="cream" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#fff1d7"/><stop offset="1" stop-color="#e9c99d"/></linearGradient>
+ <style>
+ .tail{transform-box:fill-box;transform-origin:12% 70%;animation:wag .48s ease-in-out infinite alternate}
+ .ear-left{transform-box:fill-box;transform-origin:80% 12%;animation:ear .9s ease-in-out infinite alternate}
+ .ear-right{transform-box:fill-box;transform-origin:15% 12%;animation:ear .9s ease-in-out .18s infinite alternate}
+ .blink{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+ @keyframes wag{from{transform:rotate(-16deg)}to{transform:rotate(21deg)}}
+ @keyframes ear{from{transform:rotate(0)}to{transform:rotate(4deg)}}
+ @keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.08)}}
+ @media(prefers-reduced-motion:reduce){.tail,.ear-left,.ear-right,.blink{animation:none}}
+ </style>
+</defs>
+<!-- Tail behind the body -->
+<g class="tail"><path d="M285 237 Q337 216 345 174 Q350 151 335 149 Q321 149 319 171 Q310 202 274 207" fill="none" stroke="#c78343" stroke-width="25" stroke-linecap="round"/><path d="M333 160 Q341 155 341 169" fill="none" stroke="#f2c57e" stroke-width="7" stroke-linecap="round"/></g>
+<!-- Hind legs -->
+<path d="M132 277 Q117 318 132 339 Q145 352 176 343 L187 316 L190 275Z" fill="#d99750"/>
+<path d="M230 278 Q244 316 239 337 Q248 352 278 344 Q294 339 285 321 L274 274Z" fill="#d99750"/>
+<ellipse cx="153" cy="341" rx="29" ry="14" fill="#f5d9ad"/><ellipse cx="264" cy="341" rx="28" ry="14" fill="#f5d9ad"/>
+<!-- Body -->
+<path d="M111 219 Q123 185 172 184 L251 191 Q288 203 294 249 L280 305 Q262 324 218 317 L145 314 Q111 301 109 268Z" fill="url(#fur)"/>
+<ellipse cx="202" cy="266" rx="48" ry="48" fill="#f5d8a7" opacity=".65"/>
+<!-- Front legs -->
+<path d="M132 274 Q124 309 131 333 Q139 345 160 338 L172 323 L169 273Z" fill="#e9b66f"/>
+<path d="M235 275 L237 324 Q240 345 263 339 Q280 337 273 318 L268 274Z" fill="#e9b66f"/>
+<ellipse cx="148" cy="337" rx="24" ry="11" fill="#fff0d4"/><ellipse cx="257" cy="337" rx="24" ry="11" fill="#fff0d4"/>
+<!-- Ears -->
+<g class="ear-left"><path d="M121 91 Q83 73 77 117 Q70 169 113 183 Q134 177 137 141Z" fill="#b9703d"/><path d="M111 105 Q91 100 91 126 Q91 153 112 161 Q124 151 124 133Z" fill="#d99572"/></g>
+<g class="ear-right"><path d="M278 92 Q317 70 330 112 Q343 157 304 181 Q284 177 277 144Z" fill="#b9703d"/><path d="M294 105 Q316 98 319 123 Q321 149 300 161 Q286 151 286 133Z" fill="#d99572"/></g>
+<!-- Head -->
+<path d="M113 94 Q128 47 200 48 Q270 48 292 94 Q315 137 287 178 Q265 211 207 215 Q151 215 120 181 Q95 149 113 94Z" fill="url(#fur)"/>
+<!-- forehead fluff -->
+<path d="M155 60 Q162 38 179 54 Q190 30 205 52 Q224 35 234 59 Q252 46 261 70 Q222 59 195 69 Q173 66 155 60Z" fill="#f5d39a"/>
+<!-- Eye patches -->
+<ellipse cx="160" cy="126" rx="25" ry="30" fill="#c88348" opacity=".34"/><ellipse cx="245" cy="126" rx="25" ry="30" fill="#c88348" opacity=".34"/>
+<!-- Eyes -->
+<g class="blink"><ellipse cx="161" cy="127" rx="9" ry="12" fill="#493629"/><ellipse cx="245" cy="127" rx="9" ry="12" fill="#493629"/><circle cx="164" cy="123" r="3.2" fill="#fff9ee"/><circle cx="248" cy="123" r="3.2" fill="#fff9ee"/></g>
+<!-- Brows -->
+<path d="M146 108 Q160 100 173 108 M231 108 Q245 100 258 108" fill="none" stroke="#bd7d43" stroke-width="5" stroke-linecap="round"/>
+<!-- Muzzle -->
+<ellipse cx="203" cy="159" rx="49" ry="37" fill="url(#cream)"/><ellipse cx="174" cy="157" rx="22" ry="17" fill="#fff3dc"/><ellipse cx="231" cy="157" rx="22" ry="17" fill="#fff3dc"/>
+<!-- Nose and smile -->
+<path d="M190 144 Q203 137 216 144 Q215 157 203 159 Q191 157 190 144Z" fill="#493629"/><ellipse cx="198" cy="145" rx="4" ry="2.5" fill="#fff0d8" opacity=".8"/>
+<path d="M203 158 L203 169 Q192 181 182 169 M203 169 Q214 181 224 168" fill="none" stroke="#8b5337" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="151" cy="161" rx="10" ry="6" fill="#e79c91" opacity=".48"/><ellipse cx="254" cy="161" rx="10" ry="6" fill="#e79c91" opacity=".48"/>
+<!-- Collar -->
+<path d="M142 199 Q201 224 267 197 L274 214 Q205 244 136 217Z" fill="#6c9c91"/>
+<path d="M141 206 Q203 231 271 204" fill="none" stroke="#9dc8b5" stroke-width="3"/>
+<path d="M194 225 L205 237 L216 225 L211 214 L199 214Z" fill="#e7b85e"/><circle cx="205" cy="222" r="4" fill="#fff0cf"/>
+</svg>
